@@ -3,7 +3,7 @@
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<a class="navbar-brand" href="#"><?php bloginfo('name'); ?></a>
+			<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<i class="mr-auto" /></i>
 				<ul class="navbar-nav">
