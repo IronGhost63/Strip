@@ -23,6 +23,12 @@ img {
 	margin:15px 0px;
 }
 
+blockquote {
+	color: #777;
+	font-style: italic;
+	padding: 0px 15px;
+}
+
 a:hover {
 	color: rgba(0,0,0,.7);
 	text-decoration: none;
