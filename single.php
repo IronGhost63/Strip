@@ -13,14 +13,14 @@
 		<?php if(have_posts()) : while(have_posts()) : the_post();?>
 		<div class="row post-container">
 			<div class="col">
+				<section class="post-thumbnail">
+					<?php the_post_thumbnail('post-cover');?>
+				</section>
 				<h2 class="post-title"><?php the_title(); ?></h2>
 				<p class="post-meta small">
 					<?php _e( 'Posted in: ' ); ?> <?php the_category( ',' ); ?> 
 					<?php _e( 'On '); ?> <?php the_time( get_option( 'date_format' ) ); ?>
 				</p>
-				<section class="post-thumbnail">
-					<?php the_post_thumbnail('post-cover');?>
-				</section>
 				<section class="content">
 					<?php the_content(); ?>
 				</section>
